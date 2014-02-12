@@ -1,0 +1,25 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+ <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/scrollView">
+ 
+ <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+  
+  <TextView android:layout_width="186dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="En que esta la temperatura a ingresar?" android:id="@+id/textView4" android:layout_gravity="left|center_vertical" /> 
+	
+	<RadioGroup android:layout_width="120dp" android:layout_height="163dp" android:layout_gravity="left" android:layout_marginLeft="33dp" android:layout_marginTop="1dp">
+  <RadioButton android:id="@+id/radio0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="farenheit" /> 
+  <RadioButton android:id="@+id/radio1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="celsius" android:checked="true" /> 
+  <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kelvin" android:id="@+id/radio2" android:checked="false" android:layout_gravity="left|center_vertical" /> 
+  </RadioGroup>
+
+	<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/editText1" android:hint="Ingrese el valor a convertir" android:imeOptions="actionDone" android:layout_margin="2dp" /> 
+  <TextView android:layout_width="186dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="En Kelvin" android:id="@+id/textView2" android:layout_gravity="center" /> 
+  <EditText android:id="@+id/editText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2dp" android:inputType="none" android:editable="false" android:hint="aqui se mostrara el valor en kelvin" /> 
+  <TextView android:layout_width="186dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="En Celsius" android:id="@+id/textView3" android:layout_gravity="center" android:layout_marginTop="-2dp" /> 
+  <EditText android:id="@+id/editText3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="aqui se mostrara el valor en celsius" android:layout_margin="2dp" android:inputType="none" android:editable="false" android:layout_gravity="left|center_vertical" /> 
+  <TextView android:layout_width="186dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="En Farenheit" android:id="@+id/textView" android:layout_gravity="center" /> 
+  <EditText android:id="@+id/editText4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2dp" android:inputType="none" android:hint="aqui se mostrara el valor en Farenheit" android:editable="false" /> 
+  <Button android:id="@+id/btn" android:layout_width="168dp" android:layout_height="wrap_content" android:text="convertir" android:onClick="calculate" android:layout_margin="10dp" android:layout_gravity="center" /> 
+  <TextView android:layout_width="186dp" android:layout_height="50dp" android:textAppearance="?android:attr/textAppearanceSmall" android:text="LdS converter" android:id="@+id/presenta" android:layout_gravity="center" /> 
+  </LinearLayout>
+  </ScrollView>
+  </LinearLayout>
